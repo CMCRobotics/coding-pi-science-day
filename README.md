@@ -1,10 +1,14 @@
-
 # CERN Raspberry Pi Community
 
 This website is based on Start Bootstrap [Business Casual Template].
 
 Please, refer to the [theme page] and the [documentation] for further details.
 
+Useful Commands
+===============
+
+* ./grainw create-post "My post title"
+* ./grainw preview     # starts up a local web server for preview on port 4000
 
 License
 =======
