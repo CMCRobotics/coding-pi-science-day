@@ -1,14 +1,14 @@
-# CERN Raspberry Pi Community
+# Coding Pi Science day at CERN 2016
 
-This website is based on Start Bootstrap [Business Casual Template].
-
-Please, refer to the [theme page] and the [documentation] for further details.
+This website is generated using Sysgear's Grain, a static website generator, with the Grain Bootstrap Theme.
 
 Useful Commands
 ===============
 
+* ./grainw create-page "My new page"
 * ./grainw create-post "My post title"
 * ./grainw preview     # starts up a local web server for preview on port 4000
+* ./grainw generate    # generates the production static website for deployment
 
 License
 =======
