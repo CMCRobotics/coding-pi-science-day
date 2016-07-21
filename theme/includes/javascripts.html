@@ -1,12 +1,25 @@
 <!-- jQuery Version 1.11.0 -->
 <script src="${r '/javascripts/jquery-1.11.0.js'}"></script>
 
+<script src="${r '/javascripts/js.cookie.js'}"></script>
+<script src="${r '/javascripts/jquery-lang-js.js'}"></script>
+
 <!-- Bootstrap Core JavaScript -->
 <script src="${r '/javascripts/bootstrap.min.js'}"></script>
+
+<!-- Script to Activate multi-lingual support -->
+<script>
+    var lang = new Lang();
+    lang.dynamic("fr","${r '/lang/fr.json'}");
+
+    lang.init({
+      defaultLang: 'en'
+    });
+</script>
 
 <!-- Script to Activate the Carousel -->
 <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 8000 //changes the speed
     })
 </script>

@@ -1,10 +1,12 @@
-brand: Business Casual
+brand: Coding Pi Science day at CERN
 sections:
     - name: Home
       link: /
-    - name: About
-      link: /about.html
+    - name: Motivation
+      link: /pages/motivation.html
+    - name: Resources
+      link: /pages/resources.html
     - name: Blog
       link: /blog/
-    - name: Contact
-      link: /contact.html
+    - name: About
+      link: /about.html

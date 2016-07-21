@@ -19,10 +19,13 @@
                 page.sections?.each { Map section ->
                 %>
                 <li>
-                    <a href="${site.url}${section.link}">${section.name}</a>
+                    <a href="${site.url}${section.link}" lang="en">${section.name}</a>
                 </li>
                 <% } %>
+                <li><a href="#lang-en" onclick="window.lang.change('en'); return false;">EN</a></li>
+                <li><a href="#lang-fr" onclick="window.lang.change('fr'); return false;">FR</a></li>
             </ul>
+            
         </div>
         <!-- /.navbar-collapse -->
     </div>
