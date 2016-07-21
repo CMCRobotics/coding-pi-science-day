@@ -1,0 +1,14 @@
+{
+	"token": {
+	    "Read More" : "Lire la suite",
+	    "&larr; Newer" : "&larr; Suivant",
+	    "Older &rarr;" : "Précédent &rarr;",
+	    "Keep up with us !" : "Suivez nous !"
+	},
+	"regex": [
+		["Budget", "Budget"],
+		["^Something at start of text", "Quelque chose au debut du texte sera presente"],
+		["This will be case insensitive", "i", "Cela sera independant de la casse utilisee"],
+		["^I had the opportunity to catch up", "J'ai eu l'occasion de converser avec Pierre Rouanet"]
+	]
+}
