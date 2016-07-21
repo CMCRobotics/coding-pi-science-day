@@ -19,17 +19,19 @@ environments {
         log.info 'Development environment is used'
         url = "http://localhost:${jetty_port}"
         show_unpublished = true
+        production_site = false
     }
     prod {
         log.info 'Production environment is used'
-        url = '' // site URL, for example http://www.example.com
+        url = 'https://coding-pi-science-day.web.cern.ch/coding-pi-science-day' // site URL, for example http://www.example.com
         show_unpublished = false
         features {
-            minify_xml = false
+            minify_xml = true
             minify_html = false
-            minify_js = false
+            minify_js = true
             minify_css = false
         }
+        production_site = true
     }
     cmd {
         features {
@@ -61,6 +63,9 @@ deploy_s3 = "s3cmd sync --acl-public --reduced-redundancy ${destination_dir}/ s3
 gh_pages_url = '' // path to GitHub repository in format git@github.com:{username}/{repo}.git
 deploy = new GHPagesDeployer(site).deploy
 
+rss {
+}
+
 // Custom commands-line commands.
 commands = [
 /*
@@ -73,7 +78,7 @@ commands = [
         file = new File(content_dir, location)
         file.parentFile.mkdirs()
         file.exists() || file.write("""---
-layout: site
+layout: page
 title: "${pageTitle}"
 published: true
 ---
