@@ -27,15 +27,15 @@
                     <span class="icon-next"></span>
                 </a>
             </div>
-            <h2 class="brand-before">
-                <small  lang="en">${page.banner.brand_before}</small>
-            </h2>
-            <h1 class="brand-name"  lang="en">${page.banner.brand_name}</h1>
+            <h2 class="brand-before langjs"  lang="en"><small>${page.banner.brand_before.en}</small></h2>
+            <h2 class="brand-before langjs" lang="fr" style="display:none"><small>${page.banner.brand_before.fr}</small></h2>
+            <h1 class="brand-name langjs" lang="en">${page.banner.brand_name.en}</h1>
+            <h1 class="brand-name langjs" lang="fr" style="display:none">${page.banner.brand_name.fr}</h1>
             <hr class="tagline-divider">
-            <h2>
-                <small  lang="en">${markdown(page.banner.brand_after)}</small>
-            </h2>
+            <h2 class="langjs" lang="en"><small>${markdown(page.banner.brand_after.en)}</small></h2>
+            <h2 class="langjs" lang="fr" style="display:none"><small>${markdown(page.banner.brand_after.fr)}</small></h2>
         </div>
     </div>
 </div>
 </div>
+

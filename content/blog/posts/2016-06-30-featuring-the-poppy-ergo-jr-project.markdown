@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "Featuring the Poppy Ergo Jr project"
+title:
+    en: "Featuring the Poppy Ergo Jr project"
+    fr: "Le projet Poppy Ergo Jr nous rejoint !"
 image: /images/slide-ergo-jr.jpg
 date: "2016-06-30 15:10"
 published: true

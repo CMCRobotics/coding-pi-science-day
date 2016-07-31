@@ -9,12 +9,22 @@
 
 <!-- Script to Activate multi-lingual support -->
 <script>
-    var lang = new Lang();
-    lang.dynamic("fr","${r '/lang/fr.json'}");
+    
+   var lang = new Lang();
+   lang.dynamic("fr","${r '/lang/fr.json'}");
 
     lang.init({
-      defaultLang: 'en'
+      defaultLang: 'en',
+      defaultSelector: '.labelLang'
     });
+
+    $(lang).on("beforeUpdate",  function (event, currentLang, newLang){
+      console.log("Language was "+currentLang);
+      console.log("Language is now "+newLang);
+      jQuery( ".langjs:lang("+currentLang+")" ).hide();
+      jQuery( ".langjs:lang("+newLang+")" ).show();
+    });
+     
 </script>
 
 <!-- Script to Activate the Carousel -->

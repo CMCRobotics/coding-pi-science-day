@@ -1,3 +1,5 @@
 
-<div class="brand" lang="en">${page.business_card?.heading ?: 'None'}</div>
-<div class="address-bar"  lang="en">${page.business_card?.address ?: 'None'}</div>
+<div class="brand langjs" lang="en">${page.business_card?.heading.en ?: 'None'}</div>
+<div class="address-bar langjs" lang="en">${page.business_card?.address.en ?: 'None'}</div>
+<div class="brand langjs" lang="fr" style="display:none">${page.business_card?.heading.fr ?: 'None'}</div>
+<div class="address-bar langjs" lang="fr" style="display:none">${page.business_card?.address.fr ?: 'None'}</div>
