@@ -14,7 +14,7 @@ human walk, suitable for research as well as artistic performances.
 </div>
 
 <div class="langjs" lang="fr">
-J'ai eu l'opportunit&eacute; de discuter avec Pierre Rouanet de l'&eacute;quipe **Projet Poppy**.
+J'ai eu l'opportunit&eacute; de discuter avec Pierre Rouanet de l'&eacute;quipe Projet Poppy.
 Le projet robotique Poppy est une plateforme &eacute;ducative et de recherche qui &eacute;tudie la marche humaine;
 la plateforme est pr&eacute;vue pour la recherche mais elle a vite &eacute;t&eacute; d&eacute;clin&eacute;e et r&eacute;utilis&eacute;e pour des performances artistiques par exemple.
 </div>
