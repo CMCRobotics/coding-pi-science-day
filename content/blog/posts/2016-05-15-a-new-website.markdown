@@ -26,7 +26,7 @@ Exciting times ahead as our projects shortlist is filling up and more people get
 Quite a few things are on the agenda, from securing a venue to receiving commitments from speakers, 
 and coordinating with potential suppliers and backers.
 
-Please stay tuned by subscribing to our [RSS feed](${site.url}/rss) and do not hesitate to contact us with your
+Please stay tuned by subscribing to our <a href="${site.url}/rss>RSS feed</a> and do not hesitate to contact us with your
 questions or remarks !
 </div>
 
@@ -35,5 +35,5 @@ C'est avec impatience que nous assemblons la liste des projets qui seront choisi
 Plusieurs choses importantes sont encore &agrave; pr&eacute;voir, de la s&eacute;lection du lieu de conf&eacute;rence en passant par la confirmation de participation des conf&eacute;renciers,
 et la coordination des sponsors et des fournisseurs de l'&eacute;v&egrave;nement.
 
-Restez inform&eacute;s en souscrivant &agrave; notre [flux RSS (en Anglais)](${site.url}/rss) et n'h&eacute;sitez pas &agrave; nous contacter avec vos questions et vos remarques !
+Restez inform&eacute;s en souscrivant &agrave; notre <a href="${site.url}/rss>Flux RSS</a> et n'h&eacute;sitez pas &agrave; nous contacter avec vos questions et vos remarques !
 </div>

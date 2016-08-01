@@ -19,7 +19,7 @@ Ce projet fait partie de l'un des quatre s&eacute;lectionn&eacute;s pour l'&eacu
 </div>
 <!--more-->
 <div class="langjs" lang="en">
-Mihaly Vadai, author of the [Muon Hunter](http://www.muonhunter.com/) kit, is an alumni of the excellent CERN High School Teachers programme and is volunteering 
+Mihaly Vadai, author of the <a href="http://www.muonhunter.com/">Muon Hunter</a> kit, is an alumni of the excellent CERN High School Teachers programme and is volunteering 
 his expertise to lead a workshop that lets you own and operate your very own muon detector.
 Applications for the **Muon Hunter** are numerous, ranging from a Geiger counter to triggering pictures of a bubble chamber.
 
@@ -32,7 +32,7 @@ We are very excited to feature Mihaly's amazing work and look forward to publish
 about his kit design on this very website !
 </div>
 <div class="langjs" lang="fr">
-Mihaly Vadai, auteur du kit [Muon Hunter](http://www.muonhunter.com/), est un ancien participant de l'excellent programme de formation du CERN 
+Mihaly Vadai, auteur du kit <a href="http://www.muonhunter.com/">Muon Hunter</a>, est un ancien participant de l'excellent programme de formation du CERN 
 destin&eacute; aux professeurs de physique de lyc&eacute;e. Il mettra son expertise &agrave; disposition pour vous permettre d'assembler 
 et d'op&eacute;rer votre propre d&eacute;tecteur de muons.
 Le &quot;Muon Hunter&quot; peut &ecirc;tre utilis&eacute; pour toute une gamme d'activit&eacute;s, en passant par le compteur Geiger 
