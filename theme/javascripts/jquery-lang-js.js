@@ -47,7 +47,8 @@ var Lang = (function () {
 			cookieLang,
 			defaultLang,
 			currentLang,
-			allowCookieOverride;
+			allowCookieOverride,
+			defaultSelector;
 
 		options = options || {};
 		options.cookie = options.cookie || {};
@@ -55,6 +56,7 @@ var Lang = (function () {
 		defaultLang = options.defaultLang;
 		currentLang = options.currentLang;
 		allowCookieOverride = options.allowCookieOverride;
+		defaultSelector = options.defaultSelector;
 
 		// Set cookie settings
 		this.cookieName = options.cookie.name || 'langCookie';
@@ -98,12 +100,12 @@ var Lang = (function () {
 
 		$(function () {
 			// Setup data on the language items
-			self._start();
+			self._start(defaultSelector);
 
 			// Check if the current language is not the same as our default
 			if (currentLang && currentLang !== self.defaultLang) {
 				// Switch to the current language
-				self.change(currentLang);
+				self.change(currentLang, defaultSelector);
 			}
 		});
 	};
@@ -193,7 +195,7 @@ var Lang = (function () {
 	 */
 	Lang.prototype._start = function (selector) {
 		// Get the page HTML
-		var arr = selector !== undefined ? $(selector).find('[lang]') : $(':not(html)[lang]'),
+		var arr = selector !== undefined ? $('[lang]').find(selector) : $(':not(html)[lang]'),
 			arrCount = arr.length,
 			elem;
 
@@ -296,7 +298,9 @@ var Lang = (function () {
 		// If element has only one text node and data-lang-token is defined
 		// set langContentKey property to use as a token
 		if(nodes.length == 1){
-			nodeObjArray[0].langToken = elem.data('langToken');
+			if(nodeObjArray[0]) {
+			    nodeObjArray[0].langToken = elem.data('langToken');
+			}
 		}
 		
 		return nodeObjArray;
@@ -492,7 +496,7 @@ var Lang = (function () {
 			this.currentLang = lang;
 			
 			// Get the page HTML
-			var arr = selector !== undefined ? $(selector).find('[lang]') : $(':not(html)[lang]'),
+			var arr = selector !== undefined ? $('[lang]').find(selector) : $(':not(html)[lang]'),
 				arrCount = arr.length,
 				elem;
 	

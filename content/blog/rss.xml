@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 	<channel>
-	  <title><![CDATA[${site.title}]]></title>
+	  <title>Coding Pi Science Day at CERN</title>
 	  <link>${site.url}${page.url}</link>
 	  <atom:link href="${site.url}${page.url}" rel="self" type="application/rss+xml" />
-	  <description>RSS Feed for <![CDATA[${site.title}]]></description>
+	  <description>RSS Feed for Coding Pi Science Day at CERN</description>
 	  <pubDate>${page.lastUpdated.format('E, d MMM yyyy HH:mm:ss Z', )}</pubDate>
 	  <generator>Sysgears Grain</generator>
 
 <% page.posts.each { post -> %>
 	  <item>
 		<guid>${site.url}${post.url}</guid>
-		<title><![CDATA[${post.title}]]></title>
+		<title><![CDATA[${markdown(post.title.en)}]]></title>
 		<pubDate>${post.date.format('E, d MMM yyyy HH:mm:ss Z', )}</pubDate>
 		<link><![CDATA[${site.url}${post.url}]]></link>
 		<description><![CDATA[${post.render().content}]]></description>

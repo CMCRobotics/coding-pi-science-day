@@ -4,16 +4,16 @@
         <div class="box">
             <div class="col-lg-12">
                 <hr>
-                <h2 class="intro-text text-center"  lang="en">
-                    ${markdown(page.team.title)}
-                </h2>
+                <h2 class="intro-text text-center langjs" lang="en">${markdown(page.team.title.en)}</h2>
+                <h2 class="intro-text text-center langjs" style="display:none" lang="fr">${markdown(page.team.title.fr)}</h2>
                 <hr>
             </div>
             <% page.team.members.each { member -> %>
             <div class="col-sm-3 text-center">
                 <img class="img-responsive" src="${member.foto}" alt="">
                 <h3>${member.name}
-                    <br><small lang="en">${member.position}</small>
+                    <br><small class="langjs" lang="en">${member.position.en}</small>
+                    <small class="langjs" lang="fr" style="display:none">${member.position.fr}</small>
                 </h3>
             </div>
             <% } %>

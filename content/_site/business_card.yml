@@ -1,3 +1,7 @@
 business_card:
-    heading: Coding Pi Science Day at CERN
-    address: 7 and 8 October 2016 | CERN, Geneva, Switzerland
+    heading:
+      en: Coding Pi Science Day
+      fr: Codez la science avec le Pi
+    address: 
+        en: 7 and 8 October 2016 | CERN, Geneva, Switzerland
+        fr: 7 et 8 Octobre 2016 | CERN, Gen&egrave;ve, Suisse

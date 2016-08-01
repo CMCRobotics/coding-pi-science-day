@@ -39,12 +39,23 @@ hr {
 .brand,
 .address-bar {
     display: none;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    margin: 5px;
+    
 }
 
 .navbar-brand {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
 }
 
 .navbar-nav {

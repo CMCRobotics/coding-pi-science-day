@@ -8,7 +8,7 @@
     <link href="${r '/blog/atom.xml'}" rel="alternate" type="application/atom+xml" title="Coding Pi Science Day ATOM Feed" />
     <link href="${r '/blog/rss.xml'}"    rel="alternate" type="application/rss+xml"    title="Coding Pi Science Day RSS Feed"  />
     
-    <title>${page.title ? page.title + " | " : ""}${page.brand}</title>
+    <title>${page.title ? (page.title.en?page.title.en:page.title) + " | " : ""}${page.brand}</title>
     <link rel="icon" type="image/png" href="${r '/images/favicon.png'}">
     <!-- Bootstrap Core CSS -->
     <link href="${r '/stylesheets/bootstrap.min.css'}" rel="stylesheet">
