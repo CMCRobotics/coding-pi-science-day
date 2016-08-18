@@ -9,12 +9,12 @@
                 <hr>
             </div>
             <% page.team.members.each { member -> %>
-            <div class="col-sm-3 text-center">
-                <img class="img-responsive" src="${member.foto}" alt="">
+            <div class="col-md-4 text-center">
+                <div><img style="width:90%" src="${member.foto}" alt=""></div>
                 <h3>${member.name}
-                    <br><small class="langjs" lang="en">${member.position.en}</small>
-                    <small class="langjs" lang="fr" style="display:none">${member.position.fr}</small>
+                    <br><small>${member.position.en}</small>
                 </h3>
+
             </div>
             <% } %>
 
