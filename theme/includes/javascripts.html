@@ -32,6 +32,13 @@
             /\.(?!html?|php3?|aspx?)([a-z]{0,3}|[a-zt]{0,4})$/.test(this.pathname);
     }).attr('target', '_blank');
     
+    if(lang.currentLang == "fr"){
+      jQuery( ".langjs:lang(en)" ).hide();
+    }
+    if(lang.currentLang == "en"){
+      jQuery( ".langjs:lang(fr)" ).hide();
+    }
+
 </script>
 
 <!-- Script to Activate the Carousel -->
