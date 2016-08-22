@@ -1,4 +1,4 @@
-
+	
 <!-- Piwik --> 
 <script type="text/javascript"> 
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/"); 
@@ -15,9 +15,10 @@ piwikTracker.enableLinkTracking();
 <footer>
     <div class="container">
         <div class="row" style="background-image: url('${r "/images/footer.png"}'); background-repeat: no-repeat;">
-            <div class="col-lg-12" style="text-align: right"><a href="/blog/rss.xml"><img src="${r "/images/rss.gif"}" alt="rss"></a> <a href="/blog/atom.xml" alt="ATOM"><img src="${r "/images/xml.gif"}"></a></div>
+            <div class="col-lg-12" style="text-align: right"><a href="${link "/blog/rss.xml"}"><img src="${r "/images/rss.gif"}" alt="rss"></a> <a href="${link "/blog/atom.xml"}" alt="ATOM"><img src="${r "/images/xml.gif"}"></a></div>
             <div class="col-lg-12 text-center" >
-                <p><span style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6vwkAArkBtLy5dTEAAAAASUVORK5CYII=);">${page.footer?.text}</span></p>
+                <p><span style="font-weight: bolder; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6vwkAArkBtLy5dTEAAAAASUVORK5CYII=);">${page.footer?.text}</span></p>
+                <div><span style="text-align: left; float:left; padding: 5px">Powered by <a href="http://sysgears.com/grain/" target="_blank">Sysgear's Grain</a>.</span><span style="text-align: right; float:right; padding: 5px"><b>Raspberry Pi</b> is a trademark of the Raspberry Pi Foundation.</span></div>
             </div>
         </div>
     </div>
