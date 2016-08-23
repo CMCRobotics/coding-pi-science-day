@@ -51,7 +51,7 @@ class ResourceMapper {
                     updatedResources << (page + [posts: posts.take(maxRss), lastUpdated: lastUpdated, site:this.site])
                     break
                 case '/blog/':
-                    applyPagination(posts, 3, page.url)
+                    applyPagination(posts, 10, page.url)
                     break
                 case ~/${site.posts_base_url}.*/:
                     def post = posts.find { it.url == page.url }
